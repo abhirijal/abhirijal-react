@@ -9,11 +9,11 @@ const ResumeItem = (props) => {
                     <div className='d-flex justify-content-between'>
                         <div>
                             <div>
-                                <span className='font-karla fw-medium text-gray' style={{ 'font-size': '23px' }}>{props.data.title}</span>
+                                <span className='font-karla fw-medium text-gray' style={{ 'font-size': '25px' }}>{props.data.title}</span>
                             </div>
                         </div>
                         <div>
-                            <span className='badge text-bg-success bg-teal'>{props.data.type}</span>
+                            <span className='badge text-bg-success bg-teal'>{props.data.time}</span>
                         </div>
                     </div>
                     <div className='d-flex justify-content-between'>
@@ -21,7 +21,7 @@ const ResumeItem = (props) => {
                             <div className='d-flex'>
                                 <div className='d-flex align-items-center me-3'>
                                     {/* <svg className='me-1' width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M11 20H21V10C21 8.89543 20.1046 8 19 8H15M11 16H11.01M17 16H17.01M7 16H7.01M11 12H11.01M17 12H17.01M7 12H7.01M11 8H11.01M7 8H7.01M15 20V6C15 4.89543 14.1046 4 13 4H5C3.89543 4 3 4.89543 3 6V20H15Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg> */}
-                                    <i class="fa-solid fa-building me-2"></i>
+                                    <i class={`fa-solid ${(props.type === "school") ? "fa-graduation-cap" : "fa-building"} me-2`}></i>
                                     <span className='font-manrope fw-semibold text-gray' style={{ 'font-size': '14px' }}>{props.data.organization}</span>
                                 </div>
                                 <div className='d-flex align-items-center'>

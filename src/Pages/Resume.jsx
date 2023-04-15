@@ -4,12 +4,9 @@ import ResumeItem from '../Components/ResumeItem';
 import './HomePage.css';
 
 const Resume = () => {
-    const workExperience = []
-    workExperience[0] = useRef(null);
-    workExperience[1] = useRef(null);
-    workExperience[2] = useRef(null);
-    workExperience[3] = useRef(null);
-    workExperience[4] = useRef(null);
+    let education = {
+        
+    }
     return (
         <div>
             <Navbar />
@@ -22,7 +19,7 @@ const Resume = () => {
                         <div className='d-flex justify-content-between'>
                             <div>
                                 <div>
-                                    <span className='font-karla fw-bold text-gray' style={{ 'font-size': '23px' }}>Bachelors in Science, Computer Science</span>
+                                    <span className='font-karla fw-bold text-gray' style={{ 'font-size': '25px' }}>Bachelors in Science, Computer Science</span>
                                 </div>
                             </div>
                             <div>
@@ -49,7 +46,7 @@ const Resume = () => {
                         <div className="collapse" id="collapseWidthExample0">
                             <div className="card card-body" style={{ 'border': 'none' }}>
                                 <p className='mb-0'>
-                                    <strong>Relevant courseworks:</strong><span> Data Structures & Algorithms, Software Engineering, Deep Learning, Operating Systems & Kerneles.</span>
+                                    <strong>Relevant courseworks:</strong><span> Data Structures & Algorithms, Software Engineering, Deep Learning, Operating Systems & Kernels.</span>
                                 </p>
                             </div>
                         </div>
@@ -60,11 +57,11 @@ const Resume = () => {
                         <h2 className="font-manrope fw-semibold" style={{ 'font-size': '41px' }}>Work Experience</h2>
                     </div>
                     <div>
-                        <ResumeItem data={{ 'title': 'Software Engineering Intern', 'type': 'Part-Time', 'organization': 'Maptician, Inc.', 'location': 'Lincoln, NE', 'date': 'Jan 2023 - Present' }} />
-                        <ResumeItem data={{ 'title': 'Full stack Developer', 'type': 'Part-Time', 'organization': 'Maptician, Inc.', 'location': 'Lincoln, NE', 'date': 'April 2022 - Present' }} />
-                        <ResumeItem data={{ 'title': 'Web Applications Programmer', 'type': 'Part-Time', 'organization': 'Maptician, Inc.', 'location': 'Lincoln, NE', 'date': 'Nov 2021 - Present' }} />
-                        <ResumeItem data={{ 'title': 'Web Applications QA Tester Intern', 'type': 'Part-Time', 'organization': 'ITS, University of Nebraska System', 'location': 'Lincoln, NE', 'date': 'Aug 2022 - Jan 2023' }} />
-                        <ResumeItem data={{ 'title': 'Software Developer', 'type': 'Part-Time', 'organization': 'Kathmandu International Mountain Film Festival', 'location': 'Kathmandu, Nepal', 'date': 'Apr 2019 - Apr 2022' }} />
+                        <ResumeItem data={{ 'title': 'Software Engineering Intern', 'type': 'work', 'time': 'Part-Time', 'organization': 'Maptician, Inc.', 'location': 'Lincoln, NE', 'date': 'Jan 2023 - Present' }} />
+                        <ResumeItem data={{ 'title': 'Full stack Developer', 'type': 'work', 'time': 'Part-Time', 'organization': 'Maptician, Inc.', 'location': 'Lincoln, NE', 'date': 'April 2022 - Present' }} />
+                        <ResumeItem data={{ 'title': 'Web Applications Programmer', 'type': 'work', 'time': 'Part-Time', 'organization': 'Maptician, Inc.', 'location': 'Lincoln, NE', 'date': 'Nov 2021 - Present' }} />
+                        <ResumeItem data={{ 'title': 'Web Applications QA Tester Intern', 'type': 'work', 'time': 'Part-Time', 'organization': 'ITS, University of Nebraska System', 'location': 'Lincoln, NE', 'date': 'Aug 2022 - Jan 2023' }} />
+                        <ResumeItem data={{ 'title': 'Software Developer', 'type': 'work', 'time': 'Part-Time', 'organization': 'Kathmandu International Mountain Film Festival', 'location': 'Kathmandu, Nepal', 'date': 'Apr 2019 - Apr 2022' }} />
                     </div>
                 </div>
             </div>
